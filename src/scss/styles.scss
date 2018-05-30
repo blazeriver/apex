@@ -1,0 +1,127 @@
+@import "variables";
+
+body {
+  background: white;
+  font-family: 'Saira Extra Condensed', sans-serif;
+  font-size: 16px;
+}
+
+.col-sm-12 {
+  border: 1px black solid;
+}
+
+.navbar-collapse {
+  left: auto !important;
+  right: 0;
+}
+
+.navbar-brand {
+  img {
+  width: 120px;
+  }
+}
+
+.brand-name {
+  font-family: "Anton",sans-serif;
+  color: white;
+  font-size: 2.3em;
+}
+
+.navbar {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#8287bc+0,181c96+52,29abe2+100 */
+  background: #8287bc; /* Old browsers */
+  background: -moz-linear-gradient(45deg, #8287bc 0%, #181c96 52%, #29abe2 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(45deg, #8287bc 0%,#181c96 52%,#29abe2 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(45deg, #8287bc 0%,#181c96 52%,#29abe2 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8287bc', endColorstr='#29abe2',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: white;
+    font-size: 1.5em;
+}
+
+.nav-link {
+    &:after {
+      content:" \2022";
+      margin-left: 9px;
+    }
+}
+
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+  color: black;
+  &:after {
+    color: white;
+  }
+}
+
+.nav-item {
+  &:last-child {
+    .nav-link {
+    &:after {
+      display: none;
+      }
+    }
+  }
+}
+
+.imgoffice {
+  width: 100%
+}
+
+@media (min-width: 1200px) {
+.container {
+    max-width: 1400px;
+  }
+}
+
+.text1 {
+  font-size: 2em;
+  color: black;
+}
+
+.hero {
+  border: solid;
+}
+
+.herobg {
+  border: solid red;
+  background: url("../img/bluebackground.jpg");
+}
+
+.textbox {
+  display: flex;
+  align-items: center;
+  padding: 0px 20px;
+}
+
+.imgpeople {
+  padding-top: 95px;
+  font-size: 1.4em;
+  color: $light-blue;
+  >div {
+    >div {
+      text-align: center;
+      p {
+        padding: 0px 20px;
+        line-height: 1.7rem;
+        margin-top: 15px;
+
+        &:nth-of-type(2) {
+          font-weight: bold;
+        }
+      }
+    }
+  }
+  img {
+      border-radius: 50%;
+      border: solid 5px $light-blue;
+      width: 225px;
+  }
+}
+
+.halfbackground {
+  background: url("../img/half.png") no-repeat;
+  background-size: 100%;
+  background-position: 0 -1200px;
+}
