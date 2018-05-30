@@ -117,6 +117,9 @@ body {
       border-radius: 50%;
       border: solid 5px $light-blue;
       width: 225px;
+      &:first-child {
+        filter: hue-rotate(90deg);
+    }
   }
 }
 
@@ -124,4 +127,21 @@ body {
   background: url("../img/half.png") no-repeat;
   background-size: 100%;
   background-position: 0 -1200px;
+}
+
+.charttext {
+  p {
+  font-size: 1.9rem;
+  color: white;
+  }
+  display: flex;
+  align-items: center;
+}
+
+.chartimg {
+  width: 100%;
+}
+
+.chartbackground {
+  background-color: $purpleish;
 }
